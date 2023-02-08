@@ -1,0 +1,48 @@
+{
+  "blog": [
+    {
+      "postName": "post1",
+      "id": "1",
+      "locale": "en",
+      "created_at": "2018-03-24T03:50:30.000Z",
+      "author": "Yuval Aloni",
+      "position": "Co-Founder & CEO of esh Group",
+      "title": "A new bank is coming",
+      "shortDesc": "It’s been more than 5 years since Shir Raanan, Alex Liverant and I began our journey and formed esh, and finally, we can now share our first public post, as we officially obtained a bank license today.",
+      "longDesc": "esh is a for-profit banking technology group. Our goal is to help accelerate the transition from conflicting banking models to mutual-interest banking models. We believe that we can offer better solutions by incorporating the efficiency of platform automation into banking. Two presently known developments are the following ventures: a core banking technology company and a consumer-centric bank brand that applies this technology for the benefit of its customers."
+    },
+    {
+      "postName": "post2",
+      "id": "2",
+      "locale": "en",
+      "created_at": "2018-03-24T03:50:30.000Z",
+      "author": "Yuval Aloni",
+      "position": "Co-Founder & CEO of esh Group",
+      "title": "esh Welcomes Clal as Shareholders",
+      "shortDesc": "Clal is expected to invest $30 million and join as a shareholder in esh",
+      "longDesc": "We are happy to announce that Clal, a reputable financial institution, with a history of successful investments in reliable and market-leading companies, is investing $30 million in esh, granting it ownership of 4.99% of the shares in each of the esh group companies - the bank and the technology company. Upon completion of the investment, the esh group companies will have a valuation of over $500 million."
+    },
+    {
+      "postName": "post1",
+      "id": "3",
+      "locale": "he",
+      "created_at": "2018-03-14T03:50:30.000Z",
+      "author": "יובל אלוני",
+      "position": "esh מייסד-שותף ומנכ\"ל קבוצת",
+      "title": "בנק חדש נולד",
+      "shortDesc": "עברו למעלה מ-5 שנים מאז ששיר רענן, אלכס ליברנט ואני התחלנו את המסע והקמנו את esh. היום באופן רשמי קיבלנו רישיון מבנק ישראל, והגיעה העת לשתף לאן פנינו.",
+      "longDesc": "esh היא קבוצת טכנולוגיה בנקאית. המטרה שלנו היא להאיץ את המעבר ממודלים בנקאיים מסורתיים אל מודלים חדשניים עם אינטרס הדדי בין הבנק ללקוח. אנחנו מאמינים שיעילות הנובעת מאוטומציה ואוטונומיה טכנולוגית, המוטמעת בתוך פלטפורמה בנקאית, יוצרת פתרונות טובים יותר. כיום הקבוצה כוללת שני מיזמים: חברת טכנולוגיות-ליבה בנקאיות ומותג בנקאי צרכני שישתמש בטכנולוגיה הזו באופן מירבי לטובת לקוחותיו."
+    },
+    {
+      "postName": "post2",
+      "id": "4",
+      "locale": "he",
+      "created_at": "2018-03-24T03:50:30.000Z",
+      "author": "Yuval Aloni",
+      "position": "esh מייסד-שותף ומנכ\"ל קבוצת",
+      "title": "מברכים את כלל על הצטרפות לבעלי המניות",
+      "shortDesc": "כלל צפויה להשקיע 100 מ׳ שקלים ולהצטרף כבעלת מניות ב- esh.",
+      "longDesc": "אנחנו שמחים להודיע שחברת כלל, מוסד משמעותי ורציני בעל היסטוריה של השקעות מוצלחות בחברות אמינות ומובילות שוק, צפויה להשקיע 100 מ׳ שקלים ב- esh ולהפוך לבעלת 4.99% מהמניות בכל אחת משתי חברות הקבוצה - הבנק וחברת הטכנולוגיה. השלמת העסקה תשקף לחברות קבוצת esh שווי מצרפי בגובה 1.8 מיליארד שקלים."
+    }
+  ]
+}
