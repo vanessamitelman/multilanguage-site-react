@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import moment from 'moment';
 import { useNavigate } from 'react-router-dom';
 import BlogItemWrapper from '../assets/wrappers/BlogItemWrapper.js';
-import { clearPosts, getPost } from '../features/postSlice.js';
+import { clearPosts } from '../features/postSlice.js';
 import { useDispatch } from 'react-redux';
 
 const BlogItem = ({ id, created_at, locale, language }) => {
