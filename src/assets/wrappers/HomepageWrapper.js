@@ -7,6 +7,7 @@ const HomepageWrapper = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 2rem;
+
   h1 {
     transition: all 1s linear;
     font-size: 3rem;

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const NavWrapper = styled.nav`
   padding: 1rem 5rem;
-  background-color: #6d76ce;
+  background-color: #cb0f3e;
   @media screen and (max-width: 768px) {
     padding: 1rem;
   }

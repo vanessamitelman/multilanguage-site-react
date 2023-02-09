@@ -4,6 +4,7 @@ const PostWrapper = styled.div`
   padding-left: 15%;
   padding-right: 15%;
   box-sizing: border-box;
+  color: #fff;
   > a {
     text-decoration: none;
     color: #000;

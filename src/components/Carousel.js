@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { CarouselWrapper } from '../assets/wrappers/CarouselWrapper';
 
-const Carousel = () => {
+const Carousel = (props) => {
   const { children, show } = props;
   const [currentIndex, setCurrentIndex] = useState(0);
   const [length, setLength] = useState(children.length);

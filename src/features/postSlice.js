@@ -38,7 +38,6 @@ const postSlice = createSlice({
         state.isLoading = false;
       })
       .addCase(getPost.fulfilled, (state, { payload }) => {
-        console.log(payload);
         state.post = payload;
         state.isLoading = false;
       });

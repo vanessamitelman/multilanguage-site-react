@@ -6,8 +6,9 @@ const FooterWrapper = styled.footer`
   text-align: center;
   padding-top: 16px;
   padding-bottom: 24px;
-  box-shadow: 0px 6px 8px 5px #000000;
-  background-color: #fff;
+  box-shadow: -2px -3px 8px 5px #fff;
+  background-color: #000;
+  color: #fff;
 `;
 
 export default FooterWrapper;

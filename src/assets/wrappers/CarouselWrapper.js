@@ -30,6 +30,7 @@ export const CarouselWrapper = styled.div`
 
   .child {
     padding: 8px;
+    color: #fff;
   }
   img {
     width: 100%;

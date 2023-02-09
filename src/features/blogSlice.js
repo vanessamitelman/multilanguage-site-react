@@ -48,6 +48,7 @@ const blogSlice = createSlice({
         state.isLoading = false;
       })
       .addCase(getBlog.fulfilled, (state, { payload }) => {
+        console.log(payload);
         state.blog = payload;
         state.isLoading = false;
       });
