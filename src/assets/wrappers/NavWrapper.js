@@ -2,6 +2,10 @@ import styled from 'styled-components';
 
 const NavWrapper = styled.nav`
   padding: 1rem 5rem;
+  background-color: #6d76ce;
+  @media screen and (max-width: 768px) {
+    padding: 1rem;
+  }
   @keyframes logoMove {
     50% {
       transform: translate(-50px, 0);
@@ -18,42 +22,21 @@ const NavWrapper = styled.nav`
       padding: 0.3rem;
     }
   }
-  &.homepage {
-    @media screen and (min-width: 768px) {
-      svg {
-        fill: #000;
-      }
-    }
-    .links {
-      a {
-        color: #1a1a1a;
-        &:hover {
-          color: #656262;
-        }
-      }
-    }
-  }
-  @media screen and (max-width: 768px) {
-    padding: 1rem;
-  }
-  &.inner-page {
-    @media screen and (min-width: 768px) {
-      background-color: #2e2f38;
-      svg {
-        fill: #fff;
-      }
-    }
-    @media screen and (max-width: 768px) {
-      background-color: #fff;
-      svg {
-        fill: #000;
-      }
-    }
+
+  svg {
+    fill: #fff;
+    font-size: 1.5rem;
   }
 
   .burger {
     .btn {
       font-size: 1.2rem;
+      svg {
+        font-size: 2rem;
+        path {
+          fill: #fff;
+        }
+      }
     }
   }
   @media screen and (min-width: 768px) {
@@ -72,12 +55,21 @@ const NavWrapper = styled.nav`
   justify-content: space-between;
 
   @media screen and (max-width: 768px) {
-    .logo {
+    .logo-large {
       display: none;
+    }
+    .logo-small {
+      margin: 0 1rem;
+      img {
+        width: 35px;
+      }
     }
   }
   @media screen and (min-width: 768px) {
-    .logo {
+    .logo-small {
+      display: none;
+    }
+    .logo-large {
       margin: 0 2rem;
       img {
         width: 100px;

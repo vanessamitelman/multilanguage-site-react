@@ -29,7 +29,7 @@ const BlogItem = ({ id, created_at, locale, language }) => {
             <p>
               {moment(created_at).format('DD/MM/YYYY')} {author}
             </p>
-            <h4>{title}</h4>
+            <h1>{title}</h1>
             <p>{shortDesc}</p>
           </div>
         </div>

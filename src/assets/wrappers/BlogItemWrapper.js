@@ -11,6 +11,9 @@ const BlogItemWrapper = styled.div`
   .item-container {
     width: 234px;
     height: 100%;
+    box-shadow: -1px 0px 4px 5px #9c9999;
+    border-radius: 6px;
+    padding: 10px;
     @media screen and (max-width: 768px) {
       box-shadow: -1px 0px 4px 5px #9c9999;
       border-radius: 6px;
@@ -20,20 +23,6 @@ const BlogItemWrapper = styled.div`
   .img-container {
     width: 234px;
     min-width: 234px;
-
-    video {
-      display: initial;
-      width: 100%;
-      height: 50%;
-      max-height: 50%;
-      transform: initial;
-      object-fit: cover;
-      background-image: url(https://www.esh.com/card-image.png);
-      border-top-left-radius: 167px;
-      border-top-right-radius: 167px;
-      user-select: none;
-      pointer-events: none;
-    }
   }
   .text-container {
     line-height: 1.5;

@@ -16,7 +16,7 @@ const Post = () => {
   const { id } = useParams();
   const { language, lang_Direction } = useSelector((store) => store.blog);
   const { isLoading, post } = useSelector((store) => store.post);
-  const { created_at, locale } = post;
+  const { created_at, locale, image, link } = post;
   const dispatch = useDispatch();
   const { t } = useTranslation();
 
@@ -29,7 +29,7 @@ const Post = () => {
     return <Loader />;
   }
 
-  if (!post.hasOwnProperty('id')) {
+  if (!post.hasOwnProperty('created_at')) {
     return (
       <PostWrapper>
         <article>{t('missing_data')}</article>

@@ -4,6 +4,11 @@ const PostWrapper = styled.div`
   padding-left: 15%;
   padding-right: 15%;
   box-sizing: border-box;
+  > a {
+    text-decoration: none;
+    color: #000;
+    padding: 0 0.5rem;
+  }
   @media screen and (max-width: 768px) {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -12,11 +17,7 @@ const PostWrapper = styled.div`
     line-height: 1.5;
     padding-bottom: 2rem;
   }
-  a {
-    text-decoration: none;
-    color: #000;
-    padding: 0 0.5rem;
-  }
+
   .back {
     display: flex;
     align-items: center;

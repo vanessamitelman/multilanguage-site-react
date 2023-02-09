@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import NavWrapper from '../assets/wrappers/NavWrapper';
 import Links from './Links';
-import logo from '../assets/images/logo.svg';
+import logoLg from '../assets/images/logo.svg';
+import logoSm from '../assets/images/logo-color-sm.svg';
 import Language from './Language';
 
 const Nav = () => {
@@ -14,9 +15,14 @@ const Nav = () => {
   };
 
   return (
-    <NavWrapper className='inner-page'>
+    <NavWrapper>
       <div className='left-side'>
         <div className='flex-center'>
+          <div className='logo-small'>
+            <Link to='/'>
+              <img src={logoSm} alt='Vanessa' />
+            </Link>
+          </div>
           <div className='burger'>
             <button className='btn' onClick={displayLinks}>
               <RxHamburgerMenu />
@@ -27,11 +33,12 @@ const Nav = () => {
               )}
             </button>
           </div>
-          <div className='logo'>
+          <div className='logo-large'>
             <Link to='/'>
-              <img src={logo} alt='Vanessa' />
+              <img src={logoLg} alt='Vanessa' />
             </Link>
           </div>
+
           <div className='links'>
             <Links />
           </div>
