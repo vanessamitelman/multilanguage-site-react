@@ -8,6 +8,7 @@ export const CarouselWrapper = styled.div`
     display: flex;
     width: 100%;
     position: relative;
+    max-width: 85vw;
   }
 
   .carousel-content-wrapper {

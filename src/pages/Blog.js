@@ -48,11 +48,6 @@ const Blog = () => {
   return (
     <BlogWrapper>
       <div className='carousel-container'>
-        <div>
-          <h2>Width: {windowSize[0]}</h2>
-
-          <h2>Height: {windowSize[1]}</h2>
-        </div>
         <Carousel show={toShow}>
           {blog.map((item, index) => {
             return (

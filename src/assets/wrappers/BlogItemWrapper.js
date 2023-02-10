@@ -24,8 +24,14 @@ const BlogItemWrapper = styled.div`
       text-align: right;
     }
     img {
-      max-height: 234px;
-      min-height: 234px;
+      @media screen and (min-width: 990px) {
+        max-height: 234px;
+        min-height: 234px;
+      }
+      @media screen and (max-width: 990px) {
+        width: 100%;
+      }
+      width: 100%;
       height: 100%;
     }
   }

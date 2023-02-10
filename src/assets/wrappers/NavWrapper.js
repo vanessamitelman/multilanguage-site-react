@@ -5,6 +5,7 @@ const NavWrapper = styled.nav`
   background-color: #cb0f3e;
   position: relative;
   display: flex;
+  box-shadow: 0 0 7px #000;
   @keyframes logoMove {
     50% {
       transform: translate(-50px, 0);
@@ -13,14 +14,20 @@ const NavWrapper = styled.nav`
       transform: translate(0, 0);
     }
   }
-  @media screen and (max-width: 768px) {
-    padding: 1rem;
-  }
   .logo-container {
     img {
       width: 120px;
     }
   }
+  @media screen and (max-width: 768px) {
+    padding: 1rem;
+    .logo-container {
+      img {
+        width: 35px;
+      }
+    }
+  }
+
   .navbar-menu,
   .language-container {
     display: flex;
@@ -44,18 +51,16 @@ const NavWrapper = styled.nav`
   }
 
   .burger {
-    .btn {
-      font-size: 1.2rem;
-      svg {
-        font-size: 2rem;
-        path {
-          fill: #fff;
-        }
+    font-size: 1.2rem;
+    svg {
+      font-size: 2rem;
+      path {
+        fill: #fff;
       }
     }
   }
+
   @media screen and (min-width: 768px) {
-    box-shadow: 0 0 7px #000;
     .burger {
       display: none;
     }
