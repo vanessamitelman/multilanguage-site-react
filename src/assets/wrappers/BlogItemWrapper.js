@@ -11,6 +11,7 @@ const BlogItemWrapper = styled.div`
     background-clip: padding-box;
     box-shadow: 1px 0px 4px 5px #9c9999;
     border: 1px solid #9c9999;
+    outline: none;
     border-radius: 6px;
     padding: 10px;
     min-height: 35rem;
