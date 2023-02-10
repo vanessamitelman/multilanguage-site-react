@@ -23,7 +23,7 @@ const BlogItem = ({ id, created_at, locale, language, image }) => {
 
   return (
     <BlogItemWrapper>
-      <div onClick={handleClick}>
+      <div onClick={handleClick} className='blog-container'>
         <div className='item-container'>
           <div className='flex flex-col text-container'>
             <p>
