@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const NavWrapper = styled.nav`
-  padding: 1rem 5rem;
+  padding: 0 5rem;
   background-color: #cb0f3e;
   position: relative;
   display: flex;
@@ -15,12 +15,15 @@ const NavWrapper = styled.nav`
     }
   }
   .logo-container {
+    height: 76px;
     img {
       width: 120px;
+      margin-top: 3px;
     }
   }
   @media screen and (max-width: 768px) {
     padding: 1rem;
+    height: auto;
     .logo-container {
       img {
         width: 35px;
@@ -42,9 +45,6 @@ const NavWrapper = styled.nav`
       line-height: 1.5;
       margin: 0;
       padding: 0.3rem;
-      [dir='rtl'] & {
-        font-size: 1.3rem;
-      }
     }
   }
 
