@@ -9,20 +9,31 @@ import Carousel from '../components/Carousel';
 
 const Blog = () => {
   // eslint-disable-next-line
-  const [toShow, setToShow] = useState(3);
+  const [toShow, setToShow] = useState(0);
 
   const { language, isLoading, blog } = useSelector((store) => store.blog);
 
   const { t } = useTranslation();
   const dispatch = useDispatch();
+
+  const getSlidesToShow = () => {
+    if (window.innerWidth >= 1200) {
+      setToShow(3);
+    }
+    if (window.innerWidth < 1200) {
+      setToShow(2);
+    }
+    if (window.innerWidth < 687) {
+      setToShow(1);
+    }
+  };
+  useEffect(() => {
+    getSlidesToShow();
+  }, []);
+
   useEffect(() => {
     const handleWindowResize = () => {
-      if (window.innerWidth < 1200) {
-        setToShow(2);
-      }
-      if (window.innerWidth < 687) {
-        setToShow(1);
-      }
+      getSlidesToShow();
     };
     window.addEventListener('resize', handleWindowResize);
     return () => {
