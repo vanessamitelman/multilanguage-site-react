@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { CarouselWrapper } from '../assets/wrappers/CarouselWrapper';
+import { AiOutlineLeftCircle, AiOutlineRightCircle } from 'react-icons/ai';
+import { useSelector } from 'react-redux';
 
 const Carousel = (props) => {
   const { children, show } = props;
+  const { lang_Direction } = useSelector((store) => store.blog);
+
   const [currentIndex, setCurrentIndex] = useState(0);
   const [length, setLength] = useState(children.length);
   const [touchPosition, setTouchPosition] = useState(null);
@@ -52,7 +56,7 @@ const Carousel = (props) => {
     <CarouselWrapper>
       <div className='carousel-wrapper'>
         <button onClick={prev} className='left-arrow'>
-          &lt;
+          <AiOutlineLeftCircle size='2rem' />
         </button>
         <div
           className='carousel-content-wrapper'
@@ -62,7 +66,9 @@ const Carousel = (props) => {
           <div
             className={`carousel-content show-${show}`}
             style={{
-              transform: `translateX(-${currentIndex * (100 / show)}%)`
+              transform: `translateX(${lang_Direction === 'rtl' ? '+' : '-'}${
+                currentIndex * (100 / show)
+              }%)`
             }}
           >
             {children}
@@ -70,7 +76,7 @@ const Carousel = (props) => {
         </div>
 
         <button onClick={next} className='right-arrow'>
-          &gt;
+          <AiOutlineRightCircle size='2rem' />
         </button>
       </div>
     </CarouselWrapper>

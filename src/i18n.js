@@ -27,7 +27,8 @@ i18n
           missing_data: 'No information available right now',
           error_page1: 'error 404',
           error_page2: 'Oops, you have reached a page that does not exist',
-          language_selector: 'Select language'
+          language_selector: 'Select language',
+          readMore: 'Read More'
         }
       },
       he: {
@@ -42,7 +43,8 @@ i18n
           missing_data: 'אין מידע להציג כרגע',
           error_page1: 'שגיאה 404',
           error_page2: 'אופס, טעות בדף',
-          language_selector: 'בחר שפה'
+          language_selector: 'בחר שפה',
+          readMore: 'קרא עוד'
         }
       }
     }

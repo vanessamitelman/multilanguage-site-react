@@ -1,11 +1,9 @@
-import { useState, useEffect } from 'react';
-import { Outlet, useLocation } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 import Nav from './Nav';
 import Footer from './Footer';
 import { useSelector } from 'react-redux';
 import SharedWrapper from '../assets/wrappers/SharedWrapper';
 import MainWrapper from '../assets/wrappers/MainWrapper';
-import Language from './Language';
 
 const SharedLayout = () => {
   const { lang_Direction } = useSelector((store) => store.blog);

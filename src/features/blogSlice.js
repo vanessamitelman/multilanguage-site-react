@@ -49,7 +49,7 @@ const blogSlice = createSlice({
       })
       .addCase(getBlog.fulfilled, (state, { payload }) => {
         state.blog = payload;
-        // state.isLoading = false;
+        state.isLoading = false;
       });
   }
 });

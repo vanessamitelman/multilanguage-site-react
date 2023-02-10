@@ -55,7 +55,7 @@ const Post = () => {
           {moment(created_at).format('DD/MM/YYYY')} <BsDot />
           {locale[language].author}
         </p>
-        <a href={link} target='_blank'>
+        <a href={link} target='_blank' rel='noreferrer'>
           <img src={image} alt={locale[language].title} />
         </a>
 

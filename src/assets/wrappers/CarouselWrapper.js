@@ -41,11 +41,7 @@ export const CarouselWrapper = styled.div`
     position: absolute;
     z-index: 1;
     top: 50%;
-    width: 48px;
-    height: 48px;
-    border-radius: 24px;
-    background-color: white;
-    border: 1px solid #ddd;
+    color: white;
   }
 
   .left-arrow {

@@ -16,35 +16,28 @@ const Nav = () => {
 
   return (
     <NavWrapper>
-      <div className='left-side'>
-        <div className='flex-center'>
-          <div className='logo-small'>
-            <Link to='/'>
-              <img src={logoSm} alt='Vanessa' />
-            </Link>
-          </div>
-          <div className='burger'>
-            <button className='btn' onClick={displayLinks}>
-              <RxHamburgerMenu />
-              {showLinks && (
-                <div className='responsive'>
-                  <Links />
-                </div>
-              )}
-            </button>
-          </div>
-          <div className='logo-large'>
-            <Link to='/'>
-              <img src={logoLg} alt='Vanessa' />
-            </Link>
-          </div>
-
-          <div className='links'>
-            <Links />
-          </div>
+      <div className='logo-container'>
+        <div className='small-screens'>
+          <Link to='/'>
+            <img src={logoSm} alt='Vanessa' className='logo-small' />
+          </Link>
+        </div>
+        <div className='large-screens'>
+          <Link to='/'>
+            <img src={logoLg} alt='Vanessa' className='logo-large' />
+          </Link>
         </div>
       </div>
-      <div className='right-side'>
+      <div className='navbar-menu'>
+        <button className='btn burger small-screens' onClick={displayLinks}>
+          <RxHamburgerMenu />{' '}
+        </button>
+        <div className='small-screens '>{showLinks && <Links />}</div>
+        <div className='large-screens links'>
+          <Links />
+        </div>
+      </div>
+      <div className='language-container'>
         <Language />
       </div>
     </NavWrapper>

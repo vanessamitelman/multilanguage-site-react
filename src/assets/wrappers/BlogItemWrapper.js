@@ -9,6 +9,8 @@ const BlogItemWrapper = styled.div`
     box-shadow: -1px 0px 4px 5px #9c9999;
     border-radius: 6px;
     padding: 10px;
+    min-height: 35rem;
+    display: flex;
   }
 
   .text-container {

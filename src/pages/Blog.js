@@ -8,7 +8,9 @@ import { useDispatch, useSelector } from 'react-redux';
 import Carousel from '../components/Carousel';
 
 const Blog = () => {
+  // eslint-disable-next-line
   const [toShow, setToShow] = useState(3);
+
   const { language, isLoading, blog } = useSelector((store) => store.blog);
 
   const { t } = useTranslation();
@@ -40,9 +42,6 @@ const Blog = () => {
           })}
         </Carousel>
       </div>
-      {/* {blog.map((item, index) => {
-        return <BlogItem key={index} {...item} language={language} />;
-      })} */}
     </BlogWrapper>
   );
 };

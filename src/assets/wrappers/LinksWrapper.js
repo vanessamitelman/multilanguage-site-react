@@ -41,7 +41,7 @@ const LinksWrapper = styled.div`
       }
     }
   }
-  .responsive & {
+  .small-screens & {
     position: absolute;
   }
 `;

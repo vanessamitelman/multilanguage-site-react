@@ -3,9 +3,8 @@ import styled from 'styled-components';
 const NavWrapper = styled.nav`
   padding: 1rem 5rem;
   background-color: #cb0f3e;
-  @media screen and (max-width: 768px) {
-    padding: 1rem;
-  }
+  position: relative;
+  display: flex;
   @keyframes logoMove {
     50% {
       transform: translate(-50px, 0);
@@ -14,7 +13,23 @@ const NavWrapper = styled.nav`
       transform: translate(0, 0);
     }
   }
-  .responsive {
+  @media screen and (max-width: 768px) {
+    padding: 1rem;
+  }
+  .logo-container {
+    img {
+      width: 120px;
+    }
+  }
+  .navbar-menu,
+  .language-container {
+    display: flex;
+    align-items: center;
+  }
+  .navbar-menu {
+    flex-grow: 1;
+  }
+  .small-screens {
     position: relative;
     a {
       line-height: 1.5;
@@ -50,9 +65,6 @@ const NavWrapper = styled.nav`
       display: none;
     }
   }
-  position: relative;
-  display: flex;
-  justify-content: space-between;
 
   @media screen and (max-width: 768px) {
     .logo-large {

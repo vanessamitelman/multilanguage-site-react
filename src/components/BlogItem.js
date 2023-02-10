@@ -1,16 +1,17 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import moment from 'moment';
 import { useNavigate } from 'react-router-dom';
 import BlogItemWrapper from '../assets/wrappers/BlogItemWrapper.js';
 import { clearPosts } from '../features/postSlice.js';
 import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
-const BlogItem = ({ id, created_at, locale, language, image, link }) => {
+const BlogItem = ({ id, created_at, locale, language, image }) => {
   const { author, title, shortDesc } = locale[language];
   const navigate = useNavigate();
   const dispatch = useDispatch();
-
+  const { t } = useTranslation();
   const handleClick = () => {
     navigate(`/post/${id}`);
   };
@@ -24,8 +25,7 @@ const BlogItem = ({ id, created_at, locale, language, image, link }) => {
     <BlogItemWrapper>
       <button type='button' onClick={handleClick}>
         <div className='item-container'>
-          <div className='img-container'></div>
-          <div className='text-container'>
+          <div className='flex flex-col text-container'>
             <p>
               {moment(created_at).format('DD/MM/YYYY')} {author}
             </p>
@@ -35,7 +35,7 @@ const BlogItem = ({ id, created_at, locale, language, image, link }) => {
               {title.length > 60 && '...'}
             </h2>
 
-            <p>
+            <p className='flex-grow'>
               {shortDesc.substring(0, 130)}
               {shortDesc.length > 130 && '...'}
             </p>
@@ -44,7 +44,7 @@ const BlogItem = ({ id, created_at, locale, language, image, link }) => {
                 to={`/post/${id}`}
                 className='p-1 border-2 border-gray-400 border-solid rounded '
               >
-                Read More
+                {t('readMore')}
               </Link>
             </div>
           </div>
