@@ -6,8 +6,8 @@ import {
   getLangDirFromLocalStorage
 } from '../utils/localStorage';
 
-// const base_url = process.env.REACT_APP_API_BASE_URL;
-const base_url = 'https://json-mock-cp-vsev.onrender.com/';
+const base_url = process.env.REACT_APP_API_BASE_URL;
+// const base_url = 'https://json-mock-cp-vsev.onrender.com/';
 
 const initialState = {
   language: getLangFromLocalStorage() || 'en',
