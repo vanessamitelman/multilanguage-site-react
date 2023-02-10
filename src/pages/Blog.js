@@ -8,6 +8,10 @@ import { useDispatch, useSelector } from 'react-redux';
 import Carousel from '../components/Carousel';
 
 const Blog = () => {
+  const [windowSize, setWindowSize] = useState([
+    window.innerWidth,
+    window.innerHeight
+  ]);
   // eslint-disable-next-line
   const [toShow, setToShow] = useState(3);
 
@@ -15,7 +19,21 @@ const Blog = () => {
 
   const { t } = useTranslation();
   const dispatch = useDispatch();
-
+  useEffect(() => {
+    const handleWindowResize = () => {
+      setWindowSize([window.innerWidth, window.innerHeight]);
+      if (window.innerWidth < 1200) {
+        setToShow(2);
+      }
+      if (window.innerWidth < 687) {
+        setToShow(1);
+      }
+    };
+    window.addEventListener('resize', handleWindowResize);
+    return () => {
+      window.removeEventListener('resize', handleWindowResize);
+    };
+  });
   useEffect(() => {
     dispatch(getBlog());
     // eslint-disable-next-line
@@ -30,6 +48,11 @@ const Blog = () => {
   return (
     <BlogWrapper>
       <div className='carousel-container'>
+        <div>
+          <h2>Width: {windowSize[0]}</h2>
+
+          <h2>Height: {windowSize[1]}</h2>
+        </div>
         <Carousel show={toShow}>
           {blog.map((item, index) => {
             return (

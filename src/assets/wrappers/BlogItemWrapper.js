@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 const BlogItemWrapper = styled.div`
+  display: grid;
+  place-content: center;
   button {
     cursor: pointer;
   }

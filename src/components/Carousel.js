@@ -18,16 +18,12 @@ const Carousel = (props) => {
   const next = () => {
     if (currentIndex < length - show) {
       setCurrentIndex((prevState) => prevState + 1);
-    } else {
-      setCurrentIndex(0);
     }
   };
 
   const prev = () => {
     if (currentIndex > 0) {
       setCurrentIndex((prevState) => prevState - 1);
-    } else {
-      setCurrentIndex(length - 1);
     }
   };
 
@@ -55,9 +51,12 @@ const Carousel = (props) => {
   return (
     <CarouselWrapper>
       <div className='carousel-wrapper'>
-        <button onClick={prev} className='left-arrow'>
-          <AiOutlineLeftCircle size='2rem' />
-        </button>
+        {currentIndex > 0 && (
+          <button onClick={prev} className='left-arrow'>
+            <AiOutlineLeftCircle size='2rem' />
+          </button>
+        )}
+
         <div
           className='carousel-content-wrapper'
           onTouchStart={handleTouchStart}
@@ -74,10 +73,11 @@ const Carousel = (props) => {
             {children}
           </div>
         </div>
-
-        <button onClick={next} className='right-arrow'>
-          <AiOutlineRightCircle size='2rem' />
-        </button>
+        {currentIndex < length - show && (
+          <button onClick={next} className='right-arrow'>
+            <AiOutlineRightCircle size='2rem' />
+          </button>
+        )}
       </div>
     </CarouselWrapper>
   );
