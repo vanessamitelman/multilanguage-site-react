@@ -8,10 +8,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import Carousel from '../components/Carousel';
 
 const Blog = () => {
-  const [windowSize, setWindowSize] = useState([
-    window.innerWidth,
-    window.innerHeight
-  ]);
   // eslint-disable-next-line
   const [toShow, setToShow] = useState(3);
 
@@ -21,7 +17,6 @@ const Blog = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     const handleWindowResize = () => {
-      setWindowSize([window.innerWidth, window.innerHeight]);
       if (window.innerWidth < 1200) {
         setToShow(2);
       }
