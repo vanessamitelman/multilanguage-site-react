@@ -10,6 +10,12 @@ const PostWrapper = styled.div`
     color: #000;
     padding: 0 0.5rem;
   }
+  img {
+    box-shadow: 1px 1px 10px 6px white;
+    width: 100%;
+    height: auto;
+    border-radius: 0.2rem;
+  }
   @media screen and (max-width: 768px) {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -31,7 +37,7 @@ const PostWrapper = styled.div`
       display: block;
     }
   }
-  h2 {
+  h1 {
     text-transform: capitalize;
     padding: 2rem 0 1rem;
   }

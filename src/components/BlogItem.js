@@ -29,7 +29,7 @@ const BlogItem = ({ id, created_at, locale, language, image, link }) => {
             <p>
               {moment(created_at).format('DD/MM/YYYY')} {author}
             </p>
-            <img src={image} alt={title} />
+            <img src={image} alt={title} className='pt-2' />
             <h2 className='pt-3 pb-3 text-3xl font-bold'>
               {title.substring(0, 60)}
               {title.length > 60 && '...'}
@@ -39,13 +39,13 @@ const BlogItem = ({ id, created_at, locale, language, image, link }) => {
               {shortDesc.substring(0, 130)}
               {shortDesc.length > 130 && '...'}
             </p>
-            <div>
-              <Link to={`/post/${id}`}>Read More</Link>
-            </div>
-            <div>
-              <a href={link} target='_blank'>
-                To Original Article...
-              </a>
+            <div className='pt-4'>
+              <Link
+                to={`/post/${id}`}
+                className='p-1 border-2 border-gray-400 border-solid rounded '
+              >
+                Read More
+              </Link>
             </div>
           </div>
         </div>

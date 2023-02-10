@@ -11,24 +11,26 @@ const LoaderWrapper = styled.div`
   }
   #inner {
     border-radius: 50%;
-    width: 50vh;
-    height: 50vh;
+    width: 10rem;
+    height: 10rem;
     border: 4px solid transparent;
-    border-top-color: #000;
-    border-bottom-color: #000;
+    border-top-color: #fff;
+    border-bottom-color: #fff;
     position: absolute;
     animation: turn 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s infinite;
   }
 
   #outer {
     border-radius: 50%;
-    width: 45vh;
-    height: 45vh;
+    border-radius: 50%;
+    width: 12rem;
+    height: 12rem;
     border: 4px solid transparent;
-    border-left-color: #000;
-    border-right-color: #000;
+    border-left-color: #fff;
+    border-right-color: #fff;
     position: absolute;
     animation: turn 3s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s infinite;
+    box-shadow: 0px 0px 20px 0px #fff;
   }
   #spinner {
     position: relative;

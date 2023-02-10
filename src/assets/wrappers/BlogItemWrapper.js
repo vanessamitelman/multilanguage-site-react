@@ -13,7 +13,12 @@ const BlogItemWrapper = styled.div`
 
   .text-container {
     line-height: 1.5;
-    text-align: left;
+    [dir='ltr'] & {
+      text-align: left;
+    }
+    [dir='rtl'] & {
+      text-align: right;
+    }
     img {
       max-height: 234px;
       min-height: 234px;

@@ -44,18 +44,23 @@ const Post = () => {
         <Link to='/blog'>{t('back')}</Link>
       </div>
       <article>
-        <p className='intro'>
-          {moment(created_at).format('DD/MM/YYYY')} <BsDot />
-          {locale[language].author}
-        </p>
-        <h2
+        <h1
+          className='text-3xl'
           contentEditable='false'
           dangerouslySetInnerHTML={{
             __html: DOMPurify.sanitize(locale[language].title)
           }}
         />
+        <p className='pt-4 pb-4 intro'>
+          {moment(created_at).format('DD/MM/YYYY')} <BsDot />
+          {locale[language].author}
+        </p>
+        <a href={link} target='_blank'>
+          <img src={image} alt={locale[language].title} />
+        </a>
 
         <h4
+          className='pt-4 pb-4'
           contentEditable='false'
           dangerouslySetInnerHTML={{
             __html: DOMPurify.sanitize(locale[language].shortDesc)
