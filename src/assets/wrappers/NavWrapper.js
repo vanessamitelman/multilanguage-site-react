@@ -42,6 +42,9 @@ const NavWrapper = styled.nav`
       line-height: 1.5;
       margin: 0;
       padding: 0.3rem;
+      [dir='rtl'] & {
+        font-size: 1.3rem;
+      }
     }
   }
 

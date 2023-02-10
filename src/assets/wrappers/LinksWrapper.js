@@ -9,6 +9,9 @@ const LinksWrapper = styled.div`
     margin: 0 2rem;
     text-decoration: none;
     transition: all 0.2s linear;
+    [dir='rtl'] & {
+      font-size: 1.3rem;
+    }
     &:hover {
       color: #d3cfcf;
     }
