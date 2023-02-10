@@ -48,17 +48,20 @@ export const CarouselWrapper = styled.div`
   .left-arrow {
     left: 0;
     transform: translate(-100%, -50%);
+    [dir='rtl'] & {
+      left: auto;
+      right: 0;
+      transform: translate(100%, -50%);
+    }
   }
 
   .right-arrow {
     right: 0;
     transform: translate(100%, -50%);
-  }
-
-  @media (hover: none) and (pointer: coarse) {
-    .left-arrow,
-    .right-arrow {
-      display: none;
+    [dir='rtl'] & {
+      left: 0;
+      right: auto;
+      transform: translate(-100%, -50%);
     }
   }
 `;
