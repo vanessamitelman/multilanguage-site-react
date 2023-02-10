@@ -39,7 +39,7 @@ i18n
           },
           footer: 'Vanessa הוא סימן מסחרי רשום של Vanessa Ltd. ושל החברות שלה.',
           banner: 'אתר חדש מגיע',
-          back: 'אחורה',
+          back: 'חזרה',
           missing_data: 'אין מידע להציג כרגע',
           error_page1: 'שגיאה 404',
           error_page2: 'אופס, טעות בדף',

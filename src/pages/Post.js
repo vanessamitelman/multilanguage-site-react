@@ -60,7 +60,7 @@ const Post = () => {
         </a>
 
         <h4
-          className='pt-4 pb-4'
+          className='pt-6 pb-4 text-2xl font-bold'
           contentEditable='false'
           dangerouslySetInnerHTML={{
             __html: DOMPurify.sanitize(locale[language].shortDesc)

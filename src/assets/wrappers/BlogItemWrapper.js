@@ -8,8 +8,9 @@ const BlogItemWrapper = styled.div`
   }
   .item-container {
     height: 100%;
-    box-shadow: -1px 0px 4px 5px #9c9999;
     background-clip: padding-box;
+    box-shadow: 1px 0px 4px 5px #9c9999;
+
     border-radius: 6px;
     padding: 10px;
     min-height: 35rem;

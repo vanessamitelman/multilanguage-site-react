@@ -24,7 +24,10 @@ const PostWrapper = styled.div`
     line-height: 1.5;
     padding-bottom: 2rem;
   }
-
+  p {
+    padding: 1rem 0;
+    font-size: 1.2rem;
+  }
   .back {
     display: flex;
     align-items: center;
@@ -40,10 +43,10 @@ const PostWrapper = styled.div`
   h1 {
     text-transform: capitalize;
     padding: 2rem 0 1rem;
+    color: #befbff;
   }
   h4 {
-    font-size: 1.2rem;
-    padding-bottom: 1rem;
+    color: #ffe4e3;
   }
 `;
 

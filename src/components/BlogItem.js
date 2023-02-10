@@ -36,8 +36,8 @@ const BlogItem = ({ id, created_at, locale, language, image }) => {
             </h2>
 
             <p className='flex-grow'>
-              {shortDesc.substring(0, 130)}
-              {shortDesc.length > 130 && '...'}
+              {shortDesc.substring(0, 100)}
+              {shortDesc.length > 100 && '...'}
             </p>
             <div className='pt-4'>
               <Link
