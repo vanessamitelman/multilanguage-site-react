@@ -10,6 +10,7 @@ import { useDispatch } from 'react-redux';
 const Language = () => {
   const { i18n } = useTranslation();
   const dispatch = useDispatch();
+
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
     dispatch(updateLanguage());
@@ -46,8 +47,18 @@ const Language = () => {
           'aria-labelledby': 'basic-button'
         }}
       >
-        <MenuItem onClick={() => handleClose('en')}>English</MenuItem>
-        <MenuItem onClick={() => handleClose('he')}>עברית</MenuItem>
+        <MenuItem
+          style={{ fontSize: '1.5rem' }}
+          onClick={() => handleClose('en')}
+        >
+          English
+        </MenuItem>
+        <MenuItem
+          style={{ fontSize: '1.5rem' }}
+          onClick={() => handleClose('he')}
+        >
+          עברית
+        </MenuItem>
       </Menu>
     </div>
   );

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const NavWrapper = styled.nav`
-  padding: 0 5rem;
+  padding: 0.3rem 5rem;
   background-color: #cb0f3e;
   position: relative;
   display: flex;
@@ -14,15 +14,17 @@ const NavWrapper = styled.nav`
       transform: translate(0, 0);
     }
   }
-  .logo-container {
-    height: 76px;
-    img {
-      width: 120px;
-      margin-top: 3px;
+  @media screen and (min-width: 768px) {
+    .logo-container {
+      height: 76px;
+      img {
+        width: 120px;
+        margin-top: 3px;
+      }
     }
   }
   @media screen and (max-width: 768px) {
-    padding: 1rem;
+    padding: 0 1rem;
     height: auto;
     .logo-container {
       img {
@@ -40,9 +42,7 @@ const NavWrapper = styled.nav`
     flex-grow: 1;
   }
   .small-screens {
-    position: relative;
     a {
-      line-height: 1.5;
       margin: 0;
       padding: 0.3rem;
     }
@@ -134,7 +134,6 @@ const NavWrapper = styled.nav`
     }
   }
   .right-side {
-    position: relative;
     display: flex;
     align-items: center;
   }
