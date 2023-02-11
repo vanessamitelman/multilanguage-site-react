@@ -13,7 +13,7 @@ const LinksWrapper = styled.div`
       width: 70%;
     }
     100% {
-      width: calc(100vw - 4rem);
+      width: calc(100%);
     }
   }
   a {
