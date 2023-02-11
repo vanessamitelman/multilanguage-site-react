@@ -41,6 +41,7 @@ const LinksWrapper = styled.div`
   }
 
   @media screen and (max-width: 768px) {
+    z-index: 9;
     animation: open-menu 0.5s linear;
     padding: 0.5rem;
     display: flex;
