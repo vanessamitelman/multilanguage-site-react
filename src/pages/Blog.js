@@ -6,6 +6,7 @@ import { useTranslation } from 'react-i18next';
 import BlogWrapper from '../assets/wrappers/BlogWrapper';
 import { useDispatch, useSelector } from 'react-redux';
 import Carousel from '../components/Carousel';
+import { windowSize } from '../utils/windowSize';
 
 const Blog = () => {
   // eslint-disable-next-line
@@ -17,13 +18,13 @@ const Blog = () => {
   const dispatch = useDispatch();
 
   const getSlidesToShow = () => {
-    if (window.innerWidth >= 1200) {
+    if (windowSize() >= 1200) {
       setToShow(3);
     }
-    if (window.innerWidth < 1200) {
+    if (windowSize() < 1200) {
       setToShow(2);
     }
-    if (window.innerWidth < 687) {
+    if (windowSize() < 687) {
       setToShow(1);
     }
   };

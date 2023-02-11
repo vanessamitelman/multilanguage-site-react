@@ -10,6 +10,7 @@ const base_url = process.env.REACT_APP_API_BASE_URL;
 // const base_url = 'https://json-mock-cp-vsev.onrender.com/';
 
 const initialState = {
+  isSidebarOpen: false,
   language: getLangFromLocalStorage() || 'en',
   lang_Direction: getLangDirFromLocalStorage(),
   isLoading: false,
@@ -37,6 +38,12 @@ const blogSlice = createSlice({
     },
     updateLangDirection: (state) => {
       state.lang_Direction = getLangDirFromLocalStorage();
+    },
+    toggleSidebar: (state) => {
+      state.isSidebarOpen = !state.isSidebarOpen;
+    },
+    closeSidebar: (state) => {
+      state.isSidebarOpen = false;
     }
   },
 
@@ -55,6 +62,11 @@ const blogSlice = createSlice({
   }
 });
 
-export const { updateLanguage, updateLangDirection } = blogSlice.actions;
+export const {
+  updateLanguage,
+  updateLangDirection,
+  toggleSidebar,
+  closeSidebar
+} = blogSlice.actions;
 
 export default blogSlice.reducer;

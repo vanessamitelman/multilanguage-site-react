@@ -6,14 +6,15 @@ import Links from './Links';
 import logoLg from '../assets/images/logo.svg';
 import logoSm from '../assets/images/logo-color-sm.svg';
 import Language from './Language';
+import { toggleSidebar } from '../features/blogSlice';
+import { useDispatch, useSelector } from 'react-redux';
 
 const Nav = () => {
-  const [showLinks, setShowLinks] = useState(false);
-
-  const displayLinks = () => {
-    setShowLinks(!showLinks);
+  const { isSidebarOpen } = useSelector((store) => store.blog);
+  const dispatch = useDispatch();
+  const toggleMenu = () => {
+    dispatch(toggleSidebar());
   };
-
   return (
     <NavWrapper>
       <div className='logo-container'>
@@ -29,10 +30,10 @@ const Nav = () => {
         </div>
       </div>
       <div className='navbar-menu'>
-        <button className='btn burger small-screens' onClick={displayLinks}>
-          <RxHamburgerMenu />{' '}
+        <button className='btn burger small-screens' onClick={toggleMenu}>
+          <RxHamburgerMenu />
         </button>
-        <div className='small-screens '>{showLinks && <Links />}</div>
+        <div className='small-screens '>{isSidebarOpen && <Links />}</div>
         <div className='large-screens links'>
           <Links />
         </div>

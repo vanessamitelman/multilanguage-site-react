@@ -37,6 +37,11 @@ const LinksWrapper = styled.div`
       0px 8px 10px 1px rgb(0 0 0 / 14%), 0px 3px 14px 2px rgb(0 0 0 / 12%);
     position: absolute;
     outline: 0;
+    .close-btn {
+      svg {
+        fill: #000;
+      }
+    }
     a {
       &:hover {
         color: #8a8989;
