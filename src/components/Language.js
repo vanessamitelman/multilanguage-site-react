@@ -23,8 +23,8 @@ const Language = () => {
     setAnchorEl(e.currentTarget);
   };
   const handleClose = (lang) => {
-    changeLanguage(lang);
     setAnchorEl(null);
+    changeLanguage(lang);
   };
 
   return (
