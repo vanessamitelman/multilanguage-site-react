@@ -62,8 +62,13 @@ const LinksWrapper = styled.div`
       left: 0;
     }
     .small-screens.close-btn {
-      display: grid;
-      place-items: end;
+      position: absolute;
+      [dir='rtl'] & {
+        left: 0;
+      }
+      [dir='ltr'] & {
+        right: 0;
+      }
 
       svg {
         fill: #fff;
