@@ -3,12 +3,13 @@
     "home": "Home",
     "blog": "News"
   },
-  "footer": "Vanessa is a registered trademark of Vanessa Ltd. and its affiliates.",
+  "footer": "This website was built by Vanessa Mitelman",
   "banner": "A new website is coming...",
   "back": "back",
   "missing_data": "No information available right now",
   "error_page1": "error 404",
   "error_page2": "Oops, you have reached a page that does not exist",
   "language_selector": "Select language",
-  "readMore": "Read article"
+  "readMore": "Read article",
+  "companyName": "Vanessa"
 }
