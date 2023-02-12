@@ -11,7 +11,7 @@ const HomepageWrapper = styled.div`
   h1 {
     transition: all 1s linear;
     font-size: 3rem;
-    text-shadow: 8px 4px 4px #f3f1f1fc;
+    text-shadow: 2px 0px 4px #f3f1f1fc;
     &:hover {
       font-size: 4rem;
     }
