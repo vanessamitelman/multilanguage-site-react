@@ -49,7 +49,6 @@ const Language = () => {
         }}
       >
         {Object.keys(langs).map((lang) => {
-          const { nativeName } = lang;
           return (
             <MenuItem
               key={lang}
@@ -57,7 +56,7 @@ const Language = () => {
               onClick={() => handleClose(lang)}
               disabled={i18n.resolvedLanguage === lang}
             >
-              {nativeName.nativeName}
+              {langs[lang].nativeName}
             </MenuItem>
           );
         })}
