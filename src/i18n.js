@@ -18,7 +18,7 @@ i18n
         translation: {
           nav: {
             home: 'Home',
-            blog: 'Blog'
+            blog: 'News'
           },
           footer:
             'Vanessa is a registered trademark of Vanessa Ltd. and its affiliates.',
@@ -28,14 +28,14 @@ i18n
           error_page1: 'error 404',
           error_page2: 'Oops, you have reached a page that does not exist',
           language_selector: 'Select language',
-          readMore: 'Read More'
+          readMore: 'Read article'
         }
       },
       he: {
         translation: {
           nav: {
             home: 'בית',
-            blog: 'בלוג'
+            blog: 'חדשות'
           },
           footer: 'Vanessa הוא סימן מסחרי רשום של Vanessa Ltd. ושל החברות שלה.',
           banner: 'אתר חדש מגיע',
@@ -44,7 +44,7 @@ i18n
           error_page1: 'שגיאה 404',
           error_page2: 'אופס, טעות בדף',
           language_selector: 'בחר שפה',
-          readMore: 'קרא עוד'
+          readMore: 'קרא כתבה'
         }
       }
     }

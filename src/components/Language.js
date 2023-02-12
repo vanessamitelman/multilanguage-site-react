@@ -6,6 +6,7 @@ import { BsGlobe } from 'react-icons/bs';
 import { updateLanguage, updateLangDirection } from '../features/blogSlice';
 import { useTranslation } from 'react-i18next';
 import { useDispatch } from 'react-redux';
+import { langs } from '../services/langs';
 
 const Language = () => {
   const { i18n } = useTranslation();
@@ -47,18 +48,19 @@ const Language = () => {
           'aria-labelledby': 'basic-button'
         }}
       >
-        <MenuItem
-          style={{ fontSize: '1.5rem' }}
-          onClick={() => handleClose('en')}
-        >
-          English
-        </MenuItem>
-        <MenuItem
-          style={{ fontSize: '1.5rem' }}
-          onClick={() => handleClose('he')}
-        >
-          עברית
-        </MenuItem>
+        {Object.keys(langs).map((lang) => {
+          const { nativeName } = lang;
+          return (
+            <MenuItem
+              key={lang}
+              style={{ fontSize: '1.5rem' }}
+              onClick={() => handleClose(lang)}
+              disabled={i18n.resolvedLanguage === lang}
+            >
+              {nativeName.nativeName}
+            </MenuItem>
+          );
+        })}
       </Menu>
     </div>
   );
