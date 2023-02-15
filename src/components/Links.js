@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 import { useDispatch } from 'react-redux';
 import { closeSidebar } from '../features/blogSlice';
 import { IoIosClose } from 'react-icons/io';
+import { navLinks } from '../services/navLinks';
 
 const Links = () => {
   const { t } = useTranslation();
@@ -18,12 +19,14 @@ const Links = () => {
       <button className='small-screens close-btn no-border' onClick={closeMenu}>
         <IoIosClose />
       </button>
-      <NavLink to='/' onClick={closeMenu}>
-        {t('nav.home')}
-      </NavLink>
-      <NavLink to='/blog' onClick={closeMenu}>
-        {t('nav.blog')}
-      </NavLink>
+      {navLinks.map((navLink, index) => {
+        const { title, link } = navLink;
+        return (
+          <NavLink key={index} to={link} onClick={closeMenu}>
+            {t(`${title}`)}
+          </NavLink>
+        );
+      })}
     </LinksWrapper>
   );
 };
