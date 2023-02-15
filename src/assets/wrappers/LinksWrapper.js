@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 const LinksWrapper = styled.div`
   padding: 1rem 5rem;
+
   @keyframes open-menu {
     0% {
       width: 25%;
@@ -29,8 +30,8 @@ const LinksWrapper = styled.div`
     position: absolute;
     outline: 0;
     width: 100vw;
-    top: 5rem;
-    background-color: #90092b;
+    top: 3rem;
+    background-color: var(--bg-color2);
     [dir='rtl'] & {
       right: 0;
     }
@@ -47,7 +48,7 @@ const LinksWrapper = styled.div`
       }
 
       svg {
-        fill: #fff;
+        fill: var(--color);
         font-size: 3rem;
       }
     }
@@ -63,6 +64,11 @@ const LinksWrapper = styled.div`
     text-decoration: none;
     transition: all 0.2s linear;
     line-height: 2;
+    align-self: flex-start;
+
+    &.active {
+      box-shadow: var(--box-shadow4);
+    }
     [dir='ltr'] & {
       font-size: 1.1rem;
     }
@@ -70,12 +76,11 @@ const LinksWrapper = styled.div`
       font-size: 1.4rem;
     }
     &:hover {
-      color: #d3cfcf;
+      color: var(--color3);
     }
     @media screen and (max-width: 768px) {
       color: var(--color);
       margin: 0;
-      padding: 0.3rem;
     }
   }
 `;

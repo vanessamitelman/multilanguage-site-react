@@ -42,7 +42,15 @@ export const CarouselWrapper = styled.div`
     position: absolute;
     z-index: 1;
     top: 50%;
-    color: white;
+    svg {
+      fill: var(--color);
+      transition: all 0.5s linear;
+    }
+    &:hover {
+      svg {
+        fill: var(--color2);
+      }
+    }
   }
 
   .left-arrow {

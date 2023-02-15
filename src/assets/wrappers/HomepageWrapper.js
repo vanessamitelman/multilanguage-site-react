@@ -15,9 +15,9 @@ const HomepageWrapper = styled.div`
   h1 {
     transition: all 1s linear;
     font-size: 5rem;
-    text-shadow: 2px 0px 4px #f3f1f1fc;
-    background-color: white;
-    color: black;
+    text-shadow: var(----text-shadow2);
+    background-color: var(--color);
+    color: var(--bg-color1);
     font-weight: bold;
     margin: 0 auto;
     padding: 10px;
@@ -28,6 +28,7 @@ const HomepageWrapper = styled.div`
     left: 50%;
     transform: translate(-50%, -50%);
     mix-blend-mode: screen;
+    transition: all 0.5s linear;
     &:hover {
       font-size: 4rem;
     }

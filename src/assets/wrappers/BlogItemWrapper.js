@@ -21,6 +21,7 @@ const BlogItemWrapper = styled.div`
     padding: 15px;
     min-height: 38rem;
     display: flex;
+    transition: all 0.5s linear;
     [dir='ltr'] & {
       min-height: 35rem;
     }

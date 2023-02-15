@@ -2,10 +2,10 @@ import styled from 'styled-components';
 
 const NavWrapper = styled.nav`
   padding: 0.3rem 5rem;
-  background-color: #cb0f3e;
+  background-color: var(--bg-color);
   position: relative;
   display: flex;
-  box-shadow: 0 0 7px #000;
+  box-shadow: var(--box-shadow6);
   @keyframes logoMove {
     50% {
       transform: translate(-50px, 0);
@@ -24,7 +24,7 @@ const NavWrapper = styled.nav`
     }
   }
   @media screen and (max-width: 768px) {
-    padding: 0 1rem;
+    padding: 1rem;
     height: auto;
     .logo-container {
       img {
@@ -44,7 +44,7 @@ const NavWrapper = styled.nav`
   .small-screens {
     a {
       margin: 0;
-      padding: 0.3rem;
+      margin: 1rem 0 0;
     }
   }
 

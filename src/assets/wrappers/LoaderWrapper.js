@@ -29,7 +29,7 @@ const LoaderWrapper = styled.div`
     border-right-color: var(--color);
     position: absolute;
     animation: turn 3s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s infinite;
-    box-shadow: 0px 0px 20px 0px #fff;
+    box-shadow: var(--box-shadow5);
   }
   #spinner {
     position: relative;

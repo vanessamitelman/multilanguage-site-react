@@ -1,6 +1,6 @@
 import React from 'react';
 import LinksWrapper from '../assets/wrappers/LinksWrapper';
-import { Link } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useDispatch } from 'react-redux';
 import { closeSidebar } from '../features/blogSlice';
@@ -18,12 +18,12 @@ const Links = () => {
       <button className='small-screens close-btn no-border' onClick={closeMenu}>
         <IoIosClose />
       </button>
-      <Link to='/' onClick={closeMenu}>
+      <NavLink to='/' onClick={closeMenu}>
         {t('nav.home')}
-      </Link>
-      <Link to='/blog' onClick={closeMenu}>
+      </NavLink>
+      <NavLink to='/blog' onClick={closeMenu}>
         {t('nav.blog')}
-      </Link>
+      </NavLink>
     </LinksWrapper>
   );
 };
