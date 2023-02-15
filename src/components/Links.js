@@ -1,6 +1,6 @@
 import React from 'react';
 import LinksWrapper from '../assets/wrappers/LinksWrapper';
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useDispatch } from 'react-redux';
 import { closeSidebar } from '../features/blogSlice';
