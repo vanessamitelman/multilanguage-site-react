@@ -13,7 +13,7 @@ const LoaderWrapper = styled.div`
     border-radius: var(--border-radius);
     width: 10rem;
     height: 10rem;
-    border: 4px solid transparent;
+    border: var(--border2);
     border-top-color: var(--color);
     border-bottom-color: var(--color);
     position: absolute;
@@ -24,7 +24,7 @@ const LoaderWrapper = styled.div`
     border-radius: var(--border-radius);
     width: 12rem;
     height: 12rem;
-    border: 4px solid transparent;
+    border: var(--border2);
     border-left-color: var(--color);
     border-right-color: var(--color);
     position: absolute;

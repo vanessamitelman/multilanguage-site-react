@@ -15,6 +15,7 @@ html {
   --bg-color: #cb0f3e;
   --bg-color1: #000;
   --bg-color2: #90092b;
+  --bg-color3: #e8c975;
   --border-radius: 50%;
   --line-height: 1.5;
   --box-shadow1: 0px 0px 2px 5px #fff;
@@ -29,6 +30,10 @@ html {
   --color1: #a80f34;
   --color2: #e0bcbc;
   --color3: #d3cfcf;
+  --color4: #e8c96d;
+  --color5: #ffe4e3;
+  --border1: 1px solid #e8c96d;
+  --border2: 4px solid transparent;
 }
 
 body {

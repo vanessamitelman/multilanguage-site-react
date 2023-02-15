@@ -7,7 +7,7 @@ const PostWrapper = styled.div`
   color: var(--color);
   > a {
     text-decoration: none;
-    color: #000;
+    color: var(--bg-color1);
     padding: 0 0.5rem;
   }
   img {
@@ -35,15 +35,15 @@ const PostWrapper = styled.div`
     margin: 1rem 0 0;
   }
   .read-more {
-    border: 1px solid #e8c96d;
+    border: var(--border1);
     padding: 0.3rem;
     border-radius: 5px;
     position: absolute;
     transition: all 0.5s linear;
     text-transform: uppercase;
     &:hover {
-      background-color: #e8c975;
-      color: #000;
+      background-color: var(--bg-color3);
+      color: var(--bg-color1);
     }
     [dir='rtl'] & {
       left: 0;
@@ -62,10 +62,10 @@ const PostWrapper = styled.div`
   h1 {
     text-transform: capitalize;
     padding: 2rem 0 1rem;
-    color: #e8c96d;
+    color: var(--color4);
   }
   h4 {
-    color: #ffe4e3;
+    color: var(--color5);
   }
 `;
 
