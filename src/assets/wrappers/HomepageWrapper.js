@@ -14,11 +14,10 @@ const HomepageWrapper = styled.div`
 
   h1 {
     transition: all 1s linear;
-    font-size: 3rem;
+    font-size: 5rem;
     text-shadow: 2px 0px 4px #f3f1f1fc;
     background-color: white;
     color: black;
-    font-size: 10vw;
     font-weight: bold;
     margin: 0 auto;
     padding: 10px;

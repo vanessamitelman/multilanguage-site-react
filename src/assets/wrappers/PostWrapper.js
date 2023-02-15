@@ -4,7 +4,7 @@ const PostWrapper = styled.div`
   padding-left: 15%;
   padding-right: 15%;
   box-sizing: border-box;
-  color: #fff;
+  color: var(--color);
   > a {
     text-decoration: none;
     color: #000;
@@ -21,8 +21,9 @@ const PostWrapper = styled.div`
     padding-right: 1rem;
   }
   article {
-    line-height: 1.5;
-    padding-bottom: 2rem;
+    line-height: var(--line-height);
+    padding-bottom: 5rem;
+    position: relative;
   }
   p {
     padding: 1rem 0;
@@ -31,7 +32,25 @@ const PostWrapper = styled.div`
   .back {
     display: flex;
     align-items: center;
-    margin: 1rem 0 2rem;
+    margin: 1rem 0 0;
+  }
+  .read-more {
+    border: 1px solid #e8c96d;
+    padding: 0.3rem;
+    border-radius: 5px;
+    position: absolute;
+    transition: all 0.5s linear;
+    text-transform: uppercase;
+    &:hover {
+      background-color: #e8c975;
+      color: #000;
+    }
+    [dir='rtl'] & {
+      left: 0;
+    }
+    [dir='ltr'] & {
+      right: 0;
+    }
   }
   .intro {
     display: flex;
@@ -43,7 +62,7 @@ const PostWrapper = styled.div`
   h1 {
     text-transform: capitalize;
     padding: 2rem 0 1rem;
-    color: #befbff;
+    color: #e8c96d;
   }
   h4 {
     color: #ffe4e3;

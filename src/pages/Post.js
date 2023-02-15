@@ -72,6 +72,9 @@ const Post = () => {
             __html: DOMPurify.sanitize(locale[language].longDesc)
           }}
         />
+        <a href={link} target='_blank' rel='noreferrer' className='read-more'>
+          {t('ReadFull')}
+        </a>
       </article>
     </PostWrapper>
   );

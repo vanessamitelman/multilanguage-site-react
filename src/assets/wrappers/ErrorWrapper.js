@@ -9,7 +9,7 @@ const ErrorWrapper = styled.div`
   padding: 0 2rem;
 
   font-size: 3rem;
-  text-shadow: 8px 4px 4px #f3f1f1fc;
+  text-shadow: var(--text-shadow1);
 `;
 
 export default ErrorWrapper;

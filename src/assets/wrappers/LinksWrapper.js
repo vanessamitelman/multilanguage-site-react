@@ -16,37 +16,13 @@ const LinksWrapper = styled.div`
       width: calc(100%);
     }
   }
-  a {
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 1rem;
-    margin: 0 2rem;
-    text-decoration: none;
-    transition: all 0.2s linear;
-    line-height: 2;
-    [dir='ltr'] & {
-      font-size: 1.3rem;
-    }
-    [dir='rtl'] & {
-      font-size: 1.7rem;
-    }
-    &:hover {
-      color: #d3cfcf;
-    }
-    @media screen and (max-width: 768px) {
-      color: #fff;
-      margin: 0;
-      padding: 0.3rem;
-    }
-  }
-
   @media screen and (max-width: 768px) {
     z-index: 9;
     animation: open-menu 0.5s linear;
     padding: 0.5rem;
     display: flex;
     flex-direction: column;
-    background-color: #fff;
+    background-color: var(--color);
     color: rgba(0, 0, 0, 0.87);
     transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
     color: rgba(0, 0, 0, 0.87);
@@ -78,6 +54,29 @@ const LinksWrapper = styled.div`
   }
   .small-screens & {
     position: absolute;
+  }
+  a {
+    color: var(--color);
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin: 0 2rem;
+    text-decoration: none;
+    transition: all 0.2s linear;
+    line-height: 2;
+    [dir='ltr'] & {
+      font-size: 1.1rem;
+    }
+    [dir='rtl'] & {
+      font-size: 1.4rem;
+    }
+    &:hover {
+      color: #d3cfcf;
+    }
+    @media screen and (max-width: 768px) {
+      color: var(--color);
+      margin: 0;
+      padding: 0.3rem;
+    }
   }
 `;
 

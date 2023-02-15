@@ -3,21 +3,34 @@ import styled from 'styled-components';
 const BlogItemWrapper = styled.div`
   display: grid;
   place-content: center;
+  .hover-effect {
+    transition: all 0.5s linear;
+  }
+  .hover-effect:hover {
+    background-color: var(--color);
+    color: var(--color1);
+    border-color: var(--color1);
+  }
   .blog-container {
     cursor: pointer;
   }
   .item-container {
     height: 100%;
     border-radius: 2px;
-    box-shadow: 0px 0px 2px 5px #fff;
-
-    padding: 10px;
-    min-height: 35rem;
+    box-shadow: var(--box-shadow1);
+    padding: 15px;
+    min-height: 38rem;
     display: flex;
+    [dir='ltr'] & {
+      min-height: 35rem;
+    }
+    &:hover {
+      box-shadow: var(--box-shadow2);
+    }
   }
 
   .text-container {
-    line-height: 1.5;
+    line-height: var(--line-height);
     [dir='ltr'] & {
       text-align: left;
     }

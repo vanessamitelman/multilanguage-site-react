@@ -49,7 +49,7 @@ const NavWrapper = styled.nav`
   }
 
   svg {
-    fill: #fff;
+    fill: var(--color);
     font-size: 1.5rem;
   }
 
@@ -58,7 +58,7 @@ const NavWrapper = styled.nav`
     svg {
       font-size: 2rem;
       path {
-        fill: #fff;
+        fill: var(--color);
       }
     }
   }
@@ -101,27 +101,6 @@ const NavWrapper = styled.nav`
     display: flex;
     align-items: center;
   }
-  .lang-btns {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    background-color: #fff;
-    border-radius: 4px;
-    box-shadow: 5px 5px 15px 5px #000000;
-    width: 100px;
-    [dir='rtl'] & {
-      left: 0px;
-    }
-    [dir='ltr'] & {
-      right: 0px;
-    }
-    .btn {
-      &:hover {
-        color: #8a8989;
-        font-size: 1.01rem;
-      }
-    }
-  }
 
   .btn {
     background-color: transparent;
@@ -132,10 +111,6 @@ const NavWrapper = styled.nav`
     &.globe {
       font-size: 1.2rem;
     }
-  }
-  .right-side {
-    display: flex;
-    align-items: center;
   }
 `;
 

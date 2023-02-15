@@ -35,14 +35,14 @@ const BlogItem = ({ id, created_at, locale, language, image }) => {
               {title.length > 60 && '...'}
             </h2>
 
-            <p className='flex-grow'>
+            <p className='flex-grow text-xl'>
               {shortDesc.substring(0, 100)}
               {shortDesc.length > 100 && '...'}
             </p>
             <div className='pt-4'>
               <Link
                 to={`/post/${id}`}
-                className='p-1 border-2 border-gray-400 border-solid rounded '
+                className='p-1 text-xl border-2 border-gray-400 border-solid rounded hover-effect'
               >
                 {t('readMore')}
               </Link>

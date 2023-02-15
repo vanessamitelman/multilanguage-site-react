@@ -2,8 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  font-size: 16px;
+}
+:root {
+  --base-font-size: 1rem;
+  --bg-color: #cb0f3e;
+  --bg-color1: #000;
+  --border-radius: 50%;
+  --line-height: 1.5;
+  --box-shadow1: 0px 0px 2px 5px #fff;
+  --box-shadow2: 0px 0px 2px 5px #cb858c;
+  --box-shadow3: -2px -3px 8px 5px #fff;
+  --text-shadow1: 8px 4px 4px #f3f1f1fc;
+  --color: #fff;
+  --color1: #a80f34;
+}
+
 body {
   font-family: 'Ubuntu', sans-serif;
-
-  background: #cb0f3e;
+  background: var(--bg-color);
 }
