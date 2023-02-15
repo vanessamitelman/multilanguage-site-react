@@ -6,7 +6,9 @@ const Home = () => {
   const { t } = useTranslation();
   return (
     <HomepageWrapper>
-      <h1>{t('banner')}</h1>
+      <div className='text'>
+        <h1>{t('banner')}</h1>
+      </div>
     </HomepageWrapper>
   );
 };
