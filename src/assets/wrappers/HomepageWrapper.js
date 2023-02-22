@@ -14,7 +14,7 @@ const HomepageWrapper = styled.div`
 
   h1 {
     transition: all 1s linear;
-    font-size: 5rem;
+
     text-shadow: var(----text-shadow2);
     background-color: var(--color);
     color: var(--bg-color1);
@@ -29,9 +29,15 @@ const HomepageWrapper = styled.div`
     transform: translate(-50%, -50%);
     mix-blend-mode: screen;
     transition: all 0.5s linear;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 5rem;
     &:hover {
       font-size: 4rem;
     }
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 2.5rem;
   }
 `;
 
