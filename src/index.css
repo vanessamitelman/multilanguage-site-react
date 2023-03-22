@@ -8,13 +8,13 @@ html {
 :root {
   --base-font-size: 1rem;
   --transition1: all 0.5s linear;
-  --gradient-moz: -moz-linear-gradient(top, #cb0f3e 0%, #000000 100%);
-  --gradient-webkit: -webkit-linear-gradient(top, #cb0f3e 0%, #000000 100%);
-  --gradient: linear-gradient(to bottom, #cb0f3e 0%, #000000 100%);
-  --filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb0f3e', endColorstr='#000000',GradientType=0 );
-  --bg-color: #cb0f3e;
+  --gradient-moz: -moz-linear-gradient(top, #cb670f 0%, #000000 100%);
+  --gradient-webkit: -webkit-linear-gradient(top, ##cb670f 0%, #000000 100%);
+  --gradient: linear-gradient(to bottom, #cb670f 0%, #000000 100%);
+  --filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb670f', endColorstr='#000000',GradientType=0 );
+  --bg-color: #cb670f;
   --bg-color1: #000;
-  --bg-color2: #90092b;
+  --bg-color2: #723806;
   --bg-color3: #e8c975;
   --border-radius: 50%;
   --line-height: 1.5;
@@ -27,7 +27,7 @@ html {
   --text-shadow1: 4px 2px 0px #f3f1f1fc;
   --text-shadow2: 2px 0px 4px #f3f1f1fc;
   --color: #fff;
-  --color1: #a80f34;
+  --color1: #8a4d18;
   --color2: #e0bcbc;
   --color3: #d3cfcf;
   --color4: #e8c96d;
@@ -38,5 +38,10 @@ html {
 
 body {
   font-family: 'Ubuntu', sans-serif;
-  background: var(--bg-color);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(203, 15, 62, 1) 9%
+  );
 }

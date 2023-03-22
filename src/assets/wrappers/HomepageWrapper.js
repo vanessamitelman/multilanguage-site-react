@@ -13,30 +13,17 @@ const HomepageWrapper = styled.div`
   position: relative;
 
   h1 {
-    transition: all 1s linear;
-
-    text-shadow: var(----text-shadow2);
-    background-color: var(--color);
-    color: var(--bg-color1);
-    font-weight: bold;
-    margin: 0 auto;
-    padding: 10px;
-    width: 50%;
+    color: white;
     text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    mix-blend-mode: screen;
-    transition: all 0.5s linear;
+    line-height: 1;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 500px) {
     font-size: 5rem;
     &:hover {
       font-size: 4rem;
     }
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 500px) {
     font-size: 2.5rem;
   }
 `;

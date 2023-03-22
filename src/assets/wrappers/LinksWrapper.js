@@ -1,86 +1,78 @@
 import styled from 'styled-components';
 
 const LinksWrapper = styled.div`
-  padding: 1rem 5rem;
+  color: white;
+  font-size: 1.2rem;
+  display: flex;
+  gap: 1rem;
+  margin-right: 1rem;
+  .nav-link {
+    padding: 0px 10px;
+  }
+  &.is-mobile {
+    position: absolute;
+    margin-right: 0;
+    width: 80%;
+    height: auto;
+    position: fixed;
+    background: #cb0e3d;
+    z-index: 10;
+    left: 50%;
+    transform: translate(-50%, 40%);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
 
-  @keyframes open-menu {
-    0% {
-      width: 25%;
+    &.open {
+      display: block;
+      animation-name: fadeIn;
+      animation-duration: 1s;
     }
-    25% {
-      width: 55%;
+    &.close {
+      animation-name: fadeOut;
+      animation-duration: 1s;
+      animation-timing-function: linear;
+      opacity: 0;
+    }
+    .nav-link {
+      padding: 7px 0;
+    }
+  }
+  .close-btn {
+    transform: translateX(-20%);
+    font-size: 2rem;
+    position: absolute;
+    cursor: pointer;
+    right: 0;
+  }
+  .active {
+    color: #4e0517;
+    text-shadow: 0px 2px 6px #a9062f;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translate(-50%, 40%) scale(0.3);
     }
     50% {
-      width: 70%;
+      opacity: 1;
+      transform: translate(-50%, 40%) scale(1.05);
+    }
+    70% {
+      transform: translate(-50%, 40%) scale(0.9);
     }
     100% {
-      width: calc(100%);
+      transform: translate(-50%, 40%) scale(1);
     }
   }
-  @media screen and (max-width: 768px) {
-    z-index: 9;
-    animation: open-menu 0.5s linear;
-    padding: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--color);
-    color: rgba(0, 0, 0, 0.87);
-    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-    color: rgba(0, 0, 0, 0.87);
-    position: absolute;
-    outline: 0;
-    width: 100vw;
-    top: 3rem;
-    background-color: var(--bg-color2);
-    [dir='rtl'] & {
-      right: 0;
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
     }
-    [dir='ltr'] & {
-      left: 0;
-    }
-    .small-screens.close-btn {
-      position: absolute;
-      [dir='rtl'] & {
-        left: 0;
-      }
-      [dir='ltr'] & {
-        right: 0;
-      }
 
-      svg {
-        fill: var(--color);
-        font-size: 3rem;
-      }
-    }
-  }
-  .small-screens & {
-    position: absolute;
-  }
-  a {
-    color: var(--color);
-    text-transform: uppercase;
-    font-size: 1rem;
-    margin: 0 2rem;
-    text-decoration: none;
-    transition: all 0.2s linear;
-    line-height: 2;
-    align-self: flex-start;
-
-    &.active {
-      box-shadow: var(--box-shadow4);
-    }
-    [dir='ltr'] & {
-      font-size: 1.1rem;
-    }
-    [dir='rtl'] & {
-      font-size: 1.4rem;
-    }
-    &:hover {
-      color: var(--color3);
-    }
-    @media screen and (max-width: 768px) {
-      color: var(--color);
-      margin: 0;
+    100% {
+      opacity: 0;
+      visibility: hidden;
     }
   }
 `;

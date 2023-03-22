@@ -16,7 +16,7 @@ const PostWrapper = styled.div`
     height: auto;
     border-radius: 0.2rem;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 500px) {
     padding-left: 1rem;
     padding-right: 1rem;
   }
@@ -55,7 +55,7 @@ const PostWrapper = styled.div`
   .intro {
     display: flex;
     align-items: center;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 500px) {
       display: block;
     }
   }

@@ -5,7 +5,7 @@ const SharedWrapper = styled.div`
   flex-direction: column;
   height: 100vh;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 500px) {
     .small-screens {
       display: none;
     }
@@ -14,7 +14,7 @@ const SharedWrapper = styled.div`
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 500px) {
     .small-screens {
       display: block;
     }

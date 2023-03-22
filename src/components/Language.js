@@ -7,7 +7,7 @@ import { updateLanguage, updateLangDirection } from '../features/blogSlice';
 import { useTranslation } from 'react-i18next';
 import { useDispatch } from 'react-redux';
 import { langs } from '../services/langs';
-
+import LanguageBtnWrapper from '../assets/wrappers/LanguageBtnWrapper';
 const Language = () => {
   const { i18n } = useTranslation();
   const dispatch = useDispatch();
@@ -29,7 +29,7 @@ const Language = () => {
   };
 
   return (
-    <div>
+    <LanguageBtnWrapper>
       <Button
         id='basic-button'
         aria-controls={open ? 'basic-menu' : undefined}
@@ -61,7 +61,7 @@ const Language = () => {
           );
         })}
       </Menu>
-    </div>
+    </LanguageBtnWrapper>
   );
 };
 
