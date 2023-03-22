@@ -40,7 +40,7 @@ const LinksWrapper = styled.div`
       }
     }
     &.close {
-      animation: fadeOut linear 1s forwards;
+      display: none;
     }
     .nav-link {
       padding: 7px 0;
@@ -100,17 +100,6 @@ const LinksWrapper = styled.div`
     }
     100% {
       transform: translate(-50%, 40%) scale(1);
-    }
-  }
-  @keyframes fadeOut {
-    0% {
-      opacity: 1;
-      transform: translate(-50%, 40%) scale(1);
-    }
-    100% {
-      opacity: 0;
-      transform: translate(-50%, 40%) scale(0);
-      display: none;
     }
   }
 `;
