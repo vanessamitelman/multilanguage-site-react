@@ -31,7 +31,12 @@ const LinksWrapper = styled.div`
       display: block;
       animation: fadeIn linear 1s forwards;
       .nav-link {
-        animation: LinkfadeIn var(--bezier) 1s forwards;
+        [dir='ltr'] & {
+          animation: LinkfadeInLtr var(--bezier) 1s forwards;
+        }
+        [dir='rtl'] & {
+          animation: LinkfadeInRtl var(--bezier) 1s forwards;
+        }
       }
     }
     &.close {
@@ -55,10 +60,23 @@ const LinksWrapper = styled.div`
       left: 0;
     }
   }
-  @keyframes LinkfadeIn {
+  @keyframes LinkfadeInLtr {
     0% {
       opacity: 0;
       transform: translateX(100%);
+    }
+    75% {
+      opacity: 0.2;
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes LinkfadeInRtl {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
     }
     75% {
       opacity: 0.2;
