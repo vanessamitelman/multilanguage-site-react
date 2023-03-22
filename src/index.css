@@ -8,10 +8,14 @@ html {
 :root {
   --base-font-size: 1rem;
   --transition1: all 0.5s linear;
-  --gradient-moz: -moz-linear-gradient(top, #cb670f 0%, #000000 100%);
-  --gradient-webkit: -webkit-linear-gradient(top, ##cb670f 0%, #000000 100%);
-  --gradient: linear-gradient(to bottom, #cb670f 0%, #000000 100%);
-  --filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb670f', endColorstr='#000000',GradientType=0 );
+  --gradient-moz: -moz-linear-gradient(top, var(--bg-color) 0%, #000000 100%);
+  --gradient-webkit: -webkit-linear-gradient(
+    top,
+    var(--bg-color) 0%,
+    #000000 100%
+  );
+  --gradient: linear-gradient(to bottom, var(--bg-color) 0%, #000000 100%);
+  --filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--bg-color)', endColorstr='#000000',GradientType=0 );
   --bg-color: #cb670f;
   --bg-color1: #000;
   --bg-color2: #723806;
@@ -32,8 +36,9 @@ html {
   --color3: #d3cfcf;
   --color4: #e8c96d;
   --color5: #ffe4e3;
-  --border1: 1px solid #e8c96d;
+  --border1: 1px solid var(--color4);
   --border2: 4px solid transparent;
+  --bezier: cubic-bezier(0.52, 0.03, 0.25, 0.99);
 }
 
 body {

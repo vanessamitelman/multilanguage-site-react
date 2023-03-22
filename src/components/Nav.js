@@ -32,32 +32,6 @@ const Nav = () => {
     };
   }, []);
   return (
-    // <NavWrapper>
-    //   <div className='logo-container'>
-    //     <div className='small-screens'>
-    //       <Link to='/'>
-    //         <img src={logoSm} alt='Vanessa' className='logo-small' />
-    //       </Link>
-    //     </div>
-    //     <div className='large-screens'>
-    //       <Link to='/'>
-    //         <img src={logoLg} alt='Vanessa' className='logo-large' />
-    //       </Link>
-    //     </div>
-    //   </div>
-    //   <div className='navbar-menu'>
-    //     <button className='btn burger small-screens' onClick={toggleMenu}>
-    //       <RxHamburgerMenu />
-    //     </button>
-    //     <div className='small-screens '>{isSidebarOpen && <Links />}</div>
-    //     <div className='large-screens links'>
-    //       <Links />
-    //     </div>
-    //   </div>
-    //   <div className='language-container'>
-    //     <Language />
-    //   </div>
-    // </NavWrapper>
     <NavWrapper>
       <div className='nav-container'>
         <div className='nav-header'>

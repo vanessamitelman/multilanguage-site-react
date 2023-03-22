@@ -1,14 +1,19 @@
 import styled from 'styled-components';
 
 const LinksWrapper = styled.div`
-  color: white;
+  color: #4e0517;
   font-size: 1.2rem;
   display: flex;
   gap: 1rem;
   margin-right: 1rem;
+  .active {
+    color: white;
+    text-shadow: 0px 2px 6px #a9062f;
+  }
   .nav-link {
     padding: 0px 10px;
   }
+
   &.is-mobile {
     position: absolute;
     margin-right: 0;
@@ -24,14 +29,13 @@ const LinksWrapper = styled.div`
 
     &.open {
       display: block;
-      animation-name: fadeIn;
-      animation-duration: 1s;
+      animation: fadeIn linear 1s forwards;
+      .nav-link {
+        animation: LinkfadeIn var(--bezier) 1s forwards;
+      }
     }
     &.close {
-      animation-name: fadeOut;
-      animation-duration: 1s;
-      animation-timing-function: linear;
-      opacity: 0;
+      animation: fadeOut linear 1s forwards;
     }
     .nav-link {
       padding: 7px 0;
@@ -41,7 +45,7 @@ const LinksWrapper = styled.div`
     font-size: 2rem;
     position: absolute;
     cursor: pointer;
-
+    z-index: 10;
     [dir='ltr'] & {
       transform: translateX(-20%);
       right: 0;
@@ -51,15 +55,23 @@ const LinksWrapper = styled.div`
       left: 0;
     }
   }
-  .active {
-    color: #4e0517;
-    text-shadow: 0px 2px 6px #a9062f;
+  @keyframes LinkfadeIn {
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    75% {
+      opacity: 0.2;
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
   }
-
   @keyframes fadeIn {
     0% {
       opacity: 0;
-      transform: translate(-50%, 40%) scale(0.3);
+      transform: translate(-50%, 40%) scale(0);
     }
     50% {
       opacity: 1;
@@ -75,11 +87,12 @@ const LinksWrapper = styled.div`
   @keyframes fadeOut {
     0% {
       opacity: 1;
+      transform: translate(-50%, 40%) scale(1);
     }
-
     100% {
       opacity: 0;
-      visibility: hidden;
+      transform: translate(-50%, 40%) scale(0);
+      display: none;
     }
   }
 `;
