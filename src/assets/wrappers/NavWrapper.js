@@ -15,6 +15,14 @@ const NavWrapper = styled.nav`
     @media screen and (min-width: 500px) {
       flex-direction: row-reverse;
     }
+    .links-container {
+      [dir='ltr'] & {
+        margin-right: 30%;
+      }
+      [dir='rtl'] & {
+        margin-left: 30%;
+      }
+    }
   }
   .burger {
     font-size: 2rem;
