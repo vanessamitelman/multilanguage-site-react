@@ -7,7 +7,7 @@ import logoLg from '../assets/images/logo.svg';
 import logoSm from '../assets/images/logo-color-sm.svg';
 import Language from './Language';
 import { toggleSidebar } from '../features/blogSlice';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 
 const Nav = () => {
   const [isMobile, setIsMobile] = useState(false);
