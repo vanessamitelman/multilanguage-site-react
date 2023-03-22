@@ -38,11 +38,18 @@ const LinksWrapper = styled.div`
     }
   }
   .close-btn {
-    transform: translateX(-20%);
     font-size: 2rem;
     position: absolute;
     cursor: pointer;
-    right: 0;
+
+    [dir='ltr'] & {
+      transform: translateX(-20%);
+      right: 0;
+    }
+    [dir='rtl'] & {
+      transform: translateX(20%);
+      left: 0;
+    }
   }
   .active {
     color: #4e0517;
