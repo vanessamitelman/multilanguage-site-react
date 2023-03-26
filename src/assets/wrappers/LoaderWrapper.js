@@ -11,8 +11,8 @@ const LoaderWrapper = styled.div`
   }
   #inner {
     border-radius: var(--border-radius);
-    width: 10rem;
-    height: 10rem;
+    width: 3rem;
+    height: 3rem;
     border: var(--border2);
     border-top-color: var(--color);
     border-bottom-color: var(--color);
@@ -22,8 +22,8 @@ const LoaderWrapper = styled.div`
 
   #outer {
     border-radius: var(--border-radius);
-    width: 12rem;
-    height: 12rem;
+    width: 5rem;
+    height: 5rem;
     border: var(--border2);
     border-left-color: var(--color);
     border-right-color: var(--color);

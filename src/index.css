@@ -16,7 +16,7 @@ html {
   );
   --gradient: linear-gradient(to bottom, var(--bg-color) 0%, #000000 100%);
   --filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--bg-color)', endColorstr='#000000',GradientType=0 );
-  --bg-color: #cb670f;
+  --bg-color: #cb0f3e;
   --bg-color1: #000;
   --bg-color2: #723806;
   --bg-color3: #e8c975;
@@ -44,9 +44,5 @@ html {
 body {
   font-family: 'Ubuntu', sans-serif;
   background: rgb(2, 0, 36);
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(203, 15, 62, 1) 9%
-  );
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, var(--bg-color) 9%);
 }

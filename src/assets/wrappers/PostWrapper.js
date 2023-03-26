@@ -33,6 +33,7 @@ const PostWrapper = styled.div`
     display: flex;
     align-items: center;
     margin: 1rem 0 0;
+    cursor: pointer;
   }
   .read-more {
     border: var(--border1);

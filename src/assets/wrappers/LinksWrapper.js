@@ -5,7 +5,6 @@ const LinksWrapper = styled.div`
   font-size: 1.2rem;
   display: flex;
   gap: 1rem;
-  margin-right: 1rem;
   .active {
     color: white;
     text-shadow: 0px 2px 6px #a9062f;
@@ -26,7 +25,7 @@ const LinksWrapper = styled.div`
     transform: translate(-50%, 40%);
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
-
+    box-shadow: 0px 1px 7px 2px #000;
     &.open {
       display: block;
       animation: fadeIn linear 1s forwards;

@@ -2,6 +2,10 @@ import styled from 'styled-components';
 
 const NavWrapper = styled.nav`
   padding: 5px 15px;
+  box-shadow: inset 0px -3px 0px 0px #000;
+  @media screen and (max-width: 500px) {
+    box-shadow: inset 1px -1px 0px 0px #000;
+  }
   .nav-container {
     display: flex;
     align-items: center;
@@ -17,10 +21,10 @@ const NavWrapper = styled.nav`
     }
     .links-container {
       [dir='ltr'] & {
-        margin-right: 30%;
+        margin-right: 50%;
       }
       [dir='rtl'] & {
-        margin-left: 30%;
+        margin-left: 50%;
       }
     }
   }
